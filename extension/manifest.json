@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Etymology",
+    "version": "1.0",
+  
+    "description": "Uncover the etymology of any word by simply highlighting it on a webpage.",
+
+    "action": {
+        "default_popup": "content.html",
+        "default_title": "Etymology"
+    },
+
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+  
+    "icons": {
+      "48": "roots.png"
+    },
+    
+    "host_permissions": [
+      "http://*/*"
+    ],
+    
+    "content_scripts": [
+      {
+        "matches": ["https://*/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
