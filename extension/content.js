@@ -1,10 +1,6 @@
 // this listener includes the main functionality for the web extension
 document.addEventListener('dblclick', async function() {
-    if (event.target.closest('#extension-panel')) {
-        return;
-    }
-
-    if (event.target.closest('#popup-tab')) {
+    if (event.target.closest('#extension-panel') || event.target.closest('#popup-tab')) {
         return;
     }
 
@@ -38,7 +34,6 @@ function extensionPanel() {
     panel.style.width = '300px'; 
     panel.style.height = '200px';
     panel.style.padding = '5px';
-    // panel.style.margin = '5px';
     panel.style.backgroundColor = '#e9ecef';
     panel.style.color = 'black';
     panel.style.border = '2px solid black';
@@ -62,6 +57,8 @@ function extensionPanel() {
     exitButton.style.top = '5px';
     exitButton.style.right = '5px';
     exitButton.style.paddingRight = '7.5px';
+    exitButton.style.color = 'black';
+    exitButton.style.backgroundColor = 'transparent';
     exitButton.onclick = function() {
         document.body.removeChild(panel);
     };
