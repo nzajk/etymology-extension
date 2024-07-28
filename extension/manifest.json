@@ -1,13 +1,13 @@
 {
     "manifest_version": 3,
-    "name": "Etymology",
+    "name": "WordAncestry",
     "version": "1.0",
   
     "description": "Uncover the etymology of any word by simply highlighting it on a webpage.",
 
     "action": {
         "default_popup": "content.html",
-        "default_title": "Etymology"
+        "default_title": "WordAncestry"
     },
 
     "permissions": [
