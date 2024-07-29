@@ -1,4 +1,4 @@
-# Etymology Extension
+# Word Ancestry
 This repository contains the code for the browser extension as well as the RESTful API. This extension is used to find the etymology of a word anywhere on the internet in an instant.
 
 ## Demonstration
