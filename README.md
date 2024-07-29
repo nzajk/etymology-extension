@@ -15,6 +15,6 @@ This repository contains the code for the browser extension as well as the RESTf
 <img width="72" alt="Screenshot 2024-06-23 at 10 49 08 AM" src="https://github.com/nzajk/etymology-extension/assets/104289278/d0f8047c-5c9b-4d19-9f7d-18cdd0403f46">
 
 ## Getting Started
-1. Clone the repository using `git clone https://github.com/nzajk/etymology-extension.git`.
+1. Clone the repository using `git clone https://github.com/nzajk/word-ancestry.git`.
 2. Run the command `python server/app.py` or `python3 server/app.py` depending on your python version.
 3. Add the extension to `chrome://extensions/` and enjoy!
